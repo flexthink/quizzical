@@ -1,0 +1,13 @@
+{
+    "JWT_SECRET_KEY": "245559d1-78f1-45a2-98e8-a7276f9fc1dd",
+    "MONGODB_SETTINGS": 
+    {
+        "db": "quizzical",
+        "host": "localhost",
+        "port": 27017
+    },
+    "QUIZZICAL_SETTINGS": 
+    {
+        "learning_ability_estimate_horizon": 20
+    }
+}

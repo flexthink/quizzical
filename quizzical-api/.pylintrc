@@ -1,0 +1,8 @@
+[MASTER]
+load-plugins=pylint_mongoengine
+
+[BASIC]
+good-names=api,course,question_summary
+
+[TYPECHECK]
+ignored-classes=Course, Question

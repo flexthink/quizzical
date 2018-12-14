@@ -1,0 +1,17 @@
+setup.py
+api/__init__.py
+api/courses.py
+api/learn.py
+api/questions.py
+api/users.py
+core/__init__.py
+core/itemresponse.py
+core/learning.py
+core/models.py
+quizzical_api.egg-info/PKG-INFO
+quizzical_api.egg-info/SOURCES.txt
+quizzical_api.egg-info/dependency_links.txt
+quizzical_api.egg-info/requires.txt
+quizzical_api.egg-info/top_level.txt
+tests/__init__.py
+tests/test_learning.py
