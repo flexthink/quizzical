@@ -18,6 +18,7 @@ Done:
 - The Item Response Theory engine
 
 Still in Progress (was part of the original project)
+- Authorization with roles
 - Question difficulty reestimation
 - Support for multiple question types
 - Question categorization by concept

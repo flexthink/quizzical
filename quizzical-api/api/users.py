@@ -38,7 +38,7 @@ AUTHENTICATION_REQUEST_MODEL = api.model(
 @sort_paginate_params(api)
 class UserListResource(Resource):
     """
-    A resource for the student list
+    A resource for the user list
     """
     @api.marshal_list_with(USER_MODEL)
     @sort_paginate(allow_sort=['first_name', 'last_name', 'email'])
@@ -52,7 +52,7 @@ class UserListResource(Resource):
 @api.route('/<user_id>')
 class UserResource(Resource):
     """
-    A resource for retrieving individual students
+    A resource for retrieving individual users
     """
     @api.marshal_with(USER_MODEL)
     def get(self, user_id):

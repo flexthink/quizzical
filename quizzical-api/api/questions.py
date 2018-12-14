@@ -28,18 +28,30 @@ QUESTION_MODEL = api.model('Question', {
 
 @api.route('/<question_uuid>')
 class QuestionResource(Resource):
+    """
+    A resource for individual questions
+    """
     @api.marshal_with(QUESTION_MODEL)
     @jwt_required
     def get(self, question_uuid):
+        """
+        GET handler
+        """
         return Question.objects(uuid=question_uuid).first()
 
     @api.expect(QUESTION_MODEL, validate=True)
     @jwt_required
     def put(self, question_uuid):
+        """
+        PUT handler
+        """
         edit_question = Question(**api.payload)
         edit_question.uuid = question_uuid
         edit_question.save()
 
     @jwt_required
     def delete(self, question_uuid):
+        """
+        DELETE handler
+        """
         Question.objects(uuid=question_uuid).delete()
